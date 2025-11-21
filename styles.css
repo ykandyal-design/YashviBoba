@@ -1,99 +1,55 @@
-body {
-  text-align: center;
-  font-family: 'Georgia', serif;
-  line-height: 1.5;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #772f1a; /*brown*/
-  color: tan; /*brown*/
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.elements {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  padding-top: 8px;
-  padding-bottom: 5px;
-  color: #772f1a;
-  font-weight: 500;
-  font-size: 20px;
-  background-color: tan;
-  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-@media (max-width: 450px) {
-  .elements {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    margin: 0;
-    padding: 20px;
-    width: 35%;
-    height: 100%;
-    transform: translateX(-100%);
-  }
-}
-.burgerDiv {
-  display: none;
-}
-.rows {
-  cursor: pointer;
-}
-
-
-
-
-
-.span {
-  width: 30px;
-  height: 4px;
-  background-color: black;
-  margin-bottom: 5px;
-  border-radius: 2px;
-  transition: 0.5s cubic-bezier(0.23, 1, 0.320, 1);
-}
-
-.sidebar {
-  transform: translateX(0px);
-}
-.line-0 {
-  transform: rotate(45deg) translate(4.5px, 12px);
-}
-
-.line-1 {
-  transform: scale(0);
-}
-
-.line-2 {
-  transform: rotate(-45deg) translateY(-7.5px);
-}
-
-img {
-  width: 200px;
-  border-radius: 10px;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
-    align-items: center;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+  
+    <link rel="stylesheet" href="/s/yashviscafe/styles.css">
+    <script src="/s/yashviscafe/script.js" defer></script>
+</head>
+<body>
+     <body>
+  <nav class="navbar">
+    <ul class="elements">
+<li class="nav-el">HOME</li>
+      <li class="nav-el">FUN FACTS</li>
+      <li class="nav-el">CONTACT</li>
+    </ul>
+  </nav>
+  <script src="script.js"></script>
+</body>
     
-}
+    <div class="burgerDiv">
+  <div class="rows">
+    <div class="span"></div>
+    <div class="span"></div>
+    <div class="span"></div>
+  </div>
+</div>
+  
 
-h1 {
-  color: tan;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
+ 
+    <h1>Yashvi's Internet Cafe</h1>
+    <p>Ever wish you were sipping coffee with Rory and Lorelai from Gilmore Girls?<p>
+   <img src="https://images.squarespace-cdn.com/content/v1/5f133f9f1f4b2a1a167b24e5/9ff8d86d-3c12-46da-bd75-2a813898baa4/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" />
+              
 
-p {
-  font-size: 1.1rem;
-  margin: 5px 0;
- }
-
-.footer{
-   margin-top: 20px;
-    background-color: tan;
-    color: brown;
-}
+    <h2>Recipe 1: Luke's Diner Special </h2>
+            <ol>1. Brew 2 espresso shots.
+               2. Add sugar and cream to taste.
+               3. Pour it into a big mug.
+               4.Enjoy while gossiping with Lorelai and Rory.</ol>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXGG4E1lEq1rWiXKqxYNxRlnImNixqdRwPqbFSViE5CLWU5dW-fWnShQzBrp5B_p1qaNU&usqp=CAU" />
+        <h2> Recipe 2: Lorelai's Pumpkin Latte</h2>
+                     <ol> 1. Brew 1 espresso shot.
+                2. Steam milk and mix with pumpkin puree.
+                3. Heat sugar to make a simple syrup.
+                         4. Combine all the ingredients.</ol>
+     
+        
+                          <footer>
+      <p class="footer">brewed with love by yashvi kandyala</p>
+    </footer>
+</body>
+</html>
